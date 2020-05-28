@@ -1,6 +1,6 @@
 FROM ruby:2.7-alpine
 
-RUN apk add --no-cache build-base gcc bash cmake
+RUN apk add --no-cache build-base gcc bash cmake npm yarn
 
 ENV INSTALL_PATH /devsart
 
@@ -13,6 +13,9 @@ RUN gem install bundler
 RUN bundle install
 
 COPY . ./
+
+RUN npm install
+RUN yarn run build
 
 EXPOSE 4000
 

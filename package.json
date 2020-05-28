@@ -1,0 +1,34 @@
+{
+  "name": "devsart",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build": "node_modules/.bin/webpack --config webpack.config.js",
+    "watch": "node_modules/.bin/webpack --config webpack.config.js -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sittitep/devsart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sittitep/devsart/issues"
+  },
+  "homepage": "https://github.com/sittitep/devsart#readme",
+  "dependencies": {
+    "autoprefixer": "^9.8.0",
+    "css-loader": "^3.5.3",
+    "file-loader": "^6.0.0",
+    "postcss-loader": "^3.0.0",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "tailwindcss": "^1.4.6",
+    "webpack": "^4.43.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.11"
+  }
+}
