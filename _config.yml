@@ -31,6 +31,7 @@ github_username:  jekyll
 source: src
 destination: public
 url: https://devsart.net
+name: "DEVSART"
 
 # Build settings
 theme: minima
