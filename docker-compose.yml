@@ -12,6 +12,7 @@ services:
     links:
       - jekyll
     volumes:
+      - ./config/htpasswd:/etc/nginx/htpasswd
       - ./config/nginx.conf:/etc/nginx/nginx.conf
       # - ./config/cert.pem:/etc/ssl/certs/cert.pem:ro
       # - ./config/key.pem:/etc/ssl/private/key.pem:ro
