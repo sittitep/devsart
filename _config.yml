@@ -30,6 +30,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 source: src
 destination: public
+url: https://devsart.net
 
 # Build settings
 theme: minima
