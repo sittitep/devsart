@@ -18,18 +18,17 @@
   },
   "homepage": "https://github.com/sittitep/devsart#readme",
   "dependencies": {
+    "turbolinks": "^5.2.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.11",
+    "webpack": "^4.43.0",
     "autoprefixer": "^9.8.0",
     "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",
+    "postcss-import": "^12.0.1",
     "postcss-loader": "^3.0.0",
-    "sass": "^1.26.5",
-    "sass-loader": "^8.0.2",
     "style-loader": "^1.2.1",
-    "tailwindcss": "^1.4.6",
-    "turbolinks": "^5.2.0",
-    "webpack": "^4.43.0"
-  },
-  "devDependencies": {
-    "webpack-cli": "^3.3.11"
+    "tailwindcss": "^1.4.6"
   }
 }

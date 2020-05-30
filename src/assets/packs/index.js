@@ -1,5 +1,5 @@
 import Turbolinks from "turbolinks";
 
-import "../stylesheets/main.scss"
+import "../stylesheets/main.css"
 
 Turbolinks.start()

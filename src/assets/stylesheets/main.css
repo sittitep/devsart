@@ -1,8 +1,11 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
 @import "fonts";
+@import "markdown";
 
 :root {
-  font-family: "Kanit-ExtraLight";
+  font-family: "Kanit";
+  font-weight: 200;
 }

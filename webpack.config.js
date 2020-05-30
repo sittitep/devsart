@@ -4,18 +4,15 @@ const path = require('path');
 // This is the main configuration object.
 // Here you write different options and tell Webpack what to do
 module.exports = {
+  mode: 'production',
   module: {
     rules: [
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.css$/i,
         use: [
-          // Creates `style` nodes from JS strings
           'style-loader',
-          // Translates CSS into CommonJS
           'css-loader',
-          // Compiles Sass to CSS
-          'sass-loader',
-          'postcss-loader'
+          'postcss-loader',
         ],
       },
       {
