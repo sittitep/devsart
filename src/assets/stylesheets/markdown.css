@@ -1,5 +1,5 @@
 .markdown {
-  @apply text-lg text-grey-darkest leading-normal;
+  @apply text-lg text-gray-900 leading-normal;
   & > * + *,  & li + li, & li > p + p {
     @apply mt-6;
   }
@@ -19,13 +19,15 @@
     @apply leading-tight text-lg font-bold text-black mt-8 -mb-2;
   }
   & code {
-    @apply font-mono text-sm inline bg-grey-lighter px-1;
+    @apply font-mono text-sm inline bg-gray-100 px-1 text-white;
+    margin-left: -1.2em;
+    margin-right: -1.2em;
   }
   & pre code {
-    @apply block bg-black p-4 rounded;
+    @apply block bg-black p-4;
   }
   & blockquote {
-    @apply border-l-4 border-grey-light pl-4 italic;
+    @apply border-l-4 border-gray-200 pl-4 italic;
   }
   & ul, & ol {
     @apply pl-5;
