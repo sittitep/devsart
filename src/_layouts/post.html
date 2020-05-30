@@ -1,20 +1,28 @@
 ---
 layout: default
 ---
-<section class="text-gray-700 body-font">
-  <div class="container px-5 mx-auto flex flex-col">
+<section class="text-gray-700 body-font py-4">
+  <div class="container px-4 mx-auto flex flex-col">
     <div class="lg:w-full mx-auto">
-      <div class="flex flex-col sm:flex-row mt-10">
-        <div class="sm:w-3/4 sm:pr-8 sm:py-8 sm:mt-0 text-center sm:text-left">
-          {{ content }}
+      <div class="flex flex-col sm:flex-row">
+        <div class="sm:w-8/12 sm:pr-4">
+          <div class="text-left p-4 bg-white border sm:text-xl">
+            <div class="flex-col flex">
+              <div class="flex">
+                {% for category in page.categories %}
+                  <span class="font-medium py-1 p-2 mb-2 mr-1 bg-gray-500 inline-flex text-white text-sm">{{ category }}</span>
+                {% endfor %}
+              </div>
+              <span class="mt-1 text-gray-500 text-xs">{{ page.date | date_to_long_string }}</span>
+            </div>
+            <h2 class="text-4xl text-gray-900 mb-2 font-normal">{{ page.title }}</h2>
+            {{ content }}
+          </div>
         </div>
-        <div class="sm:w-1/4 text-center sm:pl-8 sm:py-8 sm:border-l border-gray-300 sm:border-t-0 border-t sm:mt-0 mt-4 pt-4 ">
-          {% assign author = site.data.people[page.author] %}
-          <img src="{{ author.profile_image }}" class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400"></img>
-          <div class="flex flex-col items-center text-center justify-center">
-            <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">{{ author.name }}</h2>
-            <div class="w-12 h-1 bg-blue-500 rounded mt-2 mb-4"></div>
-            <p class="text-base text-gray-600">{{ author.short_description }}</p>
+        <div class="sm:w-4/12 mt-4 sm:mt-0">
+          <div class="p-4 bg-white border">
+            {% assign author = site.data.people[page.author] %}
+            {% include author.html %}
           </div>
         </div>
       </div>
