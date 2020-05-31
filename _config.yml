@@ -22,13 +22,12 @@ title: DEVSART
 description: >- # this means to ignore newlines until "baseurl:"
   Trips, tricks, techniques for developers by developers
 permalink: /blog/:slug
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# baseurl: "https://devsart.net" # the subpath of your site, e.g. /blog
+url: https://devsart.net # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 source: src
 destination: public
-url: https://devsart.net
 name: "DEVSART"
 
 # Build settings
