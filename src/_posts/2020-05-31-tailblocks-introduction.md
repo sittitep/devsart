@@ -5,6 +5,7 @@ categories:
 - tailblocks
 author: sittitep
 layout: post
+image: assets/images/post/tailblock-introduction-thumbnail.jpg
 ---
 
 หลายๆคนน่าจะเคยผ่านตาผ่านมือกับ css framework ที่ชื่อ Tailwindcss กันมาบ้างแล้ว โดยตัว DEVSART เองก็ได้เลือกใช้ Tailwindcss เช่นกัน
