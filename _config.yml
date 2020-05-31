@@ -54,3 +54,6 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+google:
+  tag_manager:
+    container_id: GTM-PQ8HTL3
