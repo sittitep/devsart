@@ -4,6 +4,7 @@ layout: post
 author: sittitep
 categories:
 - git
+image: assets/images/post/squash-commit-3-ways-thumbnail.jpg
 ---
 
 ผู้อ่านๆหลายคนน่าจะคุ้นชินกับการ squash commit กันอยู่แล้ว แต่สำหรับ developer มือใหม่ นี่คือความหมายโดยย่อของการ squash commit
@@ -91,6 +92,20 @@ git commit
 ```
 ซึ่งนี่คือผลลัพธ์ที่ได้
 ```
+Squashed commit of the following:
 
+commit 8320eb86a407034f79968a9b7c51a8f39b4f4b1c
+Author: Sittitep Tosuwan <sittitep.tosuwan@gmail.com>
+Date:   Mon Jun 1 06:39:58 2020 +0700
 
+    Fix typo again
+
+commit e27c4a42a6f387dc769adab6940983640f86e208
+Author: Sittitep Tosuwan <sittitep.tosuwan@gmail.com>
+Date:   Mon Jun 1 06:39:49 2020 +0700
+
+    Fix typo
 ```
+
+## สรุป
+โดยปกติแล้วผมจะเลือกวิธีให้เหมาะสมกับสถานการณ์ต่างๆ ในกรณีที่เป็นการแก้คำผิด หรือ การตั้งค่าผิด ผมมักจะใช้วิธีที่สอง เพราะ  message ของ commit เหล่านั้นไม่มีความสำคัญสักเท่าไหร่ แต่ในกรณีที่ผมต้อง squash commit ของ feature branch ก่อน merge เข้า branch อื่น ผมมักจะเลือกวิธีที่หนึ่ง เพราะ message ของแต่ละ commit จะถูกเก็บไว้อย่างครบถ้วน
