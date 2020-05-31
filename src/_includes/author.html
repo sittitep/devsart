@@ -1,7 +1,17 @@
-<div class="flex">
-  <img src="{{ author.profile_image }}" class="w-12 h-12 rounded-full mr-2"></img>
-  <div class="flex text-sm flex-col">
-    <span>{{ author.name }}</span>
-    <span class="text-gray-500">{{ author.short_description }}</span>
+{% if include.style == "large" %}
+  <div class="flex">
+    <img src="{{ author.profile_image }}" class="w-16 h-16 rounded-full mr-4"></img>
+    <div class="flex text-sm flex-col">
+      <span class="text-xl font-medium">{{ author.name }}</span>
+      <span class="text-gray-500">{{ author.short_description }}</span>
+    </div>
   </div>
-</div>
+{% else %}
+  <div class="flex">
+    <img src="{{ author.profile_image }}" class="w-10 h-10 rounded-full mr-2"></img>
+    <div class="flex text-sm flex-col">
+      <span>{{ author.name }}</span>
+      <span class="text-gray-500">{{ author.short_description }}</span>
+    </div>
+  </div>
+{% endif %}

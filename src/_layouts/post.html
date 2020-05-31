@@ -22,9 +22,9 @@ layout: default
           </div>
         </div>
         <div class="sm:w-4/12 mt-4 sm:mt-0">
-          <div class="p-4 bg-white border">
+          <div class="p-4 bg-white border sm:sticky top-89">
             {% assign author = site.data.people[page.author] %}
-            {% include author.html %}
+            {% include author.html style='large' %}
           </div>
         </div>
       </div>
