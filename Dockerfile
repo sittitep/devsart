@@ -12,10 +12,10 @@ COPY Gemfile Gemfile.lock ./
 RUN gem install bundler
 RUN bundle install
 
-COPY . ./
-
 RUN npm install
 RUN yarn run build
+
+COPY . ./
 
 EXPOSE 4000
 
