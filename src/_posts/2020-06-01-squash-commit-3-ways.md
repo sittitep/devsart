@@ -60,3 +60,8 @@ Date:   Mon Jun 1 04:52:36 2020 +0700
     Fix typo again
 ```
 ## วิธีที่ 2 git reset
+คำสั่งคือ
+```
+git reset --soft HEAD~2
+```
+ จากคำสั่งนี่ 2 commit ล่าสุดของเราจะโดน reset แต่ chnage ทั้งหมดจะยัง
