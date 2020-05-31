@@ -5,10 +5,10 @@
 }
 
 .markdown {
-  @apply text-gray-900 leading-normal break-words;
+  @apply text-gray-700 leading-normal break-words;
 }
 .markdown > * {
-  @apply mb-4;
+  @apply mb-6;
 }
 
 .markdown > *:last-child {
@@ -17,7 +17,7 @@
 
 
 .markdown > * + * {
-  @apply mt-0 mb-4;
+  @apply mt-0 mb-6;
 }
 
 .markdown li + li {
@@ -33,7 +33,7 @@
 }
 
 .markdown a {
-  @apply text-blue-600 font-semibold;
+  @apply text-super-blue font-semibold;
 }
 
 .markdown strong a {

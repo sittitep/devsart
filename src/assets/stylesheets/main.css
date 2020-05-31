@@ -9,3 +9,15 @@
   font-family: "Kanit";
   font-weight: 200;
 }
+
+.yt-16x9 {
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.yt-16x9 iframe {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
