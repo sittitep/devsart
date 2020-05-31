@@ -64,4 +64,33 @@ Date:   Mon Jun 1 04:52:36 2020 +0700
 ```
 git reset --soft HEAD~2
 ```
- จากคำสั่งนี่ 2 commit ล่าสุดของเราจะโดน reset แต่ chnage ทั้งหมดจะยัง
+ จากคำสั่งนี่ 2 commit ล่าสุดของเราจะโดน reset แต่ chnage ทั้งหมดจะยังคงอยู่ ซึ่งเราสามารถ commit พร้อม message ใหม่ได้ทันที
+ ```
+ git commit -m "Newly squashed commit"
+```
+และนี่คือผลลัพธ์ที่ได้
+```
+commit fb916ee58ece542f01c9adb644218b645d53f264 (HEAD -> master)
+Author: Sittitep Tosuwan <sittitep.tosuwan@gmail.com>
+Date:   Mon Jun 1 06:23:47 2020 +0700
+
+    Newly squashed commit
+```
+## วิธีที่ 3 git merge
+ พูดตรงๆ ว่าส่วนตัวผมไม่เคยใช่วิธีนี้ แต่อยากจะเอามารวมไว้ด้วยกันเผื่อเอาไว้ reference ในอนาคต โดยคำสั่งเริ่มต้นจะคล้ายกับวิธีที่สองคือ
+```
+git reset --hard HEAD~2
+```
+ตามด้วย
+```
+git merge --squash HEAD@{1}
+```
+และปิดท้ายด้วยการ commit
+```
+git commit
+```
+ซึ่งนี่คือผลลัพธ์ที่ได้
+```
+
+
+```
