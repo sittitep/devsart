@@ -1,6 +1,7 @@
 FROM ruby:2.7-alpine
 
-RUN apk add --no-cache build-base gcc bash cmake npm yarn
+RUN apk add --no-cache build-base gcc bash cmake npm yarn tzdata
+ENV TZ=Asia/Bangkok
 
 ENV INSTALL_PATH /devsart
 
