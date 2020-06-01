@@ -2,9 +2,6 @@ version: '3'
 services:
   jekyll:
     image: devsart:latest
-    command: /bin/sh -c "bundle exec jekyll s -H 0.0.0.0"
-    volumes:
-      - .:/devsart
     ports:
       - "4000:4000"
     environment:
