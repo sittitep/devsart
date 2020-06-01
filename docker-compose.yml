@@ -1,8 +1,8 @@
 version: '3'
 services:
   jekyll:
-    build: .
-    command: /bin/sh -c "bundle exec jekyll s -H 0.0.0.0"
+    build: devsart:latest
+    command: /bin/sh -c "npm run build && bundle exec jekyll s -H 0.0.0.0"
     volumes:
       - .:/devsart
     ports:
@@ -14,10 +14,9 @@ services:
     links:
       - jekyll
     volumes:
-      - ./config/htpasswd:/etc/nginx/htpasswd
       - ./config/nginx.conf:/etc/nginx/nginx.conf
-      - ./config/cert.pem:/etc/ssl/certs/cert.pem
-      - ./config/key.pem:/etc/ssl/private/key.pem
+      - ~/config/cert.pem:/etc/ssl/certs/cert.pem
+      - ~/config/key.pem:/etc/ssl/private/key.pem
       - ./tmp/cache:/var/cache/nginx
     ports:
       - "80:80"

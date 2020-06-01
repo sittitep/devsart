@@ -5,6 +5,7 @@ author: sittitep
 categories:
 - git
 image: assets/images/post/squash-commit-3-ways-thumbnail.jpg
+date: '2020-06-01 04:00:00'
 ---
 
 ผู้อ่านๆหลายคนน่าจะคุ้นชินกับการ squash commit กันอยู่แล้ว แต่สำหรับ developer มือใหม่ นี่คือความหมายโดยย่อของการ squash commit
