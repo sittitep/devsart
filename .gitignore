@@ -10,3 +10,4 @@ config/key.pem
 node_modules
 tmp/
 src/dist
+.DS_Store
