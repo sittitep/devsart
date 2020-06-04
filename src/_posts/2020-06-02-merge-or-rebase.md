@@ -5,6 +5,7 @@ categories:
 - git
 author: sittitep
 image: assets/images/post/merge-or-rebase-thumbnail.jpg
+date: '2020-06-02 20:58:30'
 ---
 
 คำถามนี้น่าจะเคยเกิดขึ้นกับทุกๆคน ในตอนที่เรากำลังจะเอา branch feature ของเรา merge เข้ากับ branch master

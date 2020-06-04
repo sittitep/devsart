@@ -5,6 +5,7 @@ author: sittitep
 categories:
 - git
 image: assets/images/post/good-commit-thumbnail.jpg
+date: '2020-06-03 20:58:17'
 ---
 
 สวัสดีครับ การอ่าน review code คงจะเป็นอะไรที่เราคุ้นเคย แต่เคยสงสัยกันบ้างมั้ยครับว่าอะไร ที่ทำให้ pull request บางอันอ่านง๊ายง่าย แทบจะไม่ต้องถามคนเขียนกันเลย แต่กับอีกบาง pull request อ่านแล้วอ่านอีก ถามแล้วถามอีกก็ยังงงๆมึนๆ
