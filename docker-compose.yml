@@ -7,10 +7,13 @@ services:
     environment:
       - JEKYLL_ENV=production
       - TZ=Asia/Bangkok
+      - IMGPROXY=true
+      - IMGPROXY_URL=https://devsart.net/imgproxy
   nginx:
     image: nginx
     links:
       - jekyll
+      - imgproxy
     volumes:
       - ./config/nginx.conf:/etc/nginx/nginx.conf
       - ~/config/cert.pem:/etc/ssl/certs/cert.pem
@@ -21,3 +24,7 @@ services:
       - "443:443"
     environment:
       - TZ=Asia/Bangkok      
+  imgproxy:
+    image: darthsim/imgproxy
+    ports:
+      - "8080:8080"
