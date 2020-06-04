@@ -30,7 +30,7 @@ layout: default
             <div class="mt-4">
               <p class="mb-2 title-font text-lg font-medium text-gray-900">โพสต่อไป</p>
               <a href="{{ page.next.url }}">
-                <img src="{{ page.next.image | relative_url }}" class="w-full">
+                <img src="{{ page.next.image | proxy_image_url: 450, 300, 'fit' }}" class="w-full">
               </a>
             </div>
           {% endif %}
