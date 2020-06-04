@@ -11,3 +11,4 @@ node_modules
 tmp/
 src/dist
 .DS_Store
+.byebug_history
