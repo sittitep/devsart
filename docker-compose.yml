@@ -4,8 +4,8 @@ services:
     image: devsart:latest
     ports:
       - "4000:4000"
-    volumes:
-      - ~/config/.env:/devsart/.env
+    # volumes:
+      # - ~/config/.env:/devsart/.env
     environment:
       - JEKYLL_ENV=production
       - TZ=Asia/Bangkok
