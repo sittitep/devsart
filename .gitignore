@@ -12,3 +12,4 @@ tmp/
 src/dist
 .DS_Store
 .byebug_history
+yarn-error.log
