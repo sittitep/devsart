@@ -5,7 +5,7 @@ author: sittitep
 categories:
 - discussion
 date: '2020-06-05 22:32:24'
-image: assets/images/post/why-devsart.jpg
+image: assets/images/post/why-devsart-thumbnail.jpg
 ---
 
 จริงๆ ผมตั้งใจจะโพสให้ได้ทุกวัน แต่วันนี้ผมมีธุระทั้งวัน เลยมาขอโพสอะไรง่ายๆในวั้นนี้นะครับ
