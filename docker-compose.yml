@@ -4,11 +4,15 @@ services:
     image: devsart:latest
     ports:
       - "4000:4000"
+    volumes:
+      - ./.env:/devsart/.env
     environment:
       - JEKYLL_ENV=production
       - TZ=Asia/Bangkok
       - IMGPROXY=true
       - IMGPROXY_URL=https://devsart.net/imgproxy
+    env_file:
+      - .env
   nginx:
     image: nginx
     links:

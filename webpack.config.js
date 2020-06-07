@@ -1,9 +1,13 @@
+const Dotenv = require('dotenv-webpack');
 // Webpack uses this to work with directories
 const path = require('path');
 
 // This is the main configuration object.
 // Here you write different options and tell Webpack what to do
 module.exports = {
+  node: {
+    fs: "empty"
+  },
   mode: 'production',
   module: {
     rules: [
@@ -42,7 +46,9 @@ module.exports = {
     publicPath: '/assets',
     filename: 'bundle.js',
   },
-
+  plugins: [
+    new Dotenv()
+  ]
   // Default mode for Webpack is production.
   // Depending on mode Webpack will apply different things
   // on final bundle. For now we don't need production's JavaScript 
