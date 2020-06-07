@@ -3,7 +3,7 @@ import "firebase/auth";
 
 const config = {
   apiKey: "AIzaSyDy3ro2jV7iIB0tevKhxoSr6lWzjXw0Q8A",
-  authDomain: "devsart.net",
+  authDomain: "devsart-46ae6.firebaseapp.com",
   databaseURL: "https://devsart-46ae6.firebaseio.com",
   projectId: "devsart-46ae6",
   storageBucket: "devsart-46ae6.appspot.com",
