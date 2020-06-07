@@ -5,7 +5,7 @@ services:
     ports:
       - "4000:4000"
     volumes:
-      - ./.env:/devsart/.env
+      - ~/config/.env:/devsart/.env
     environment:
       - JEKYLL_ENV=production
       - TZ=Asia/Bangkok
