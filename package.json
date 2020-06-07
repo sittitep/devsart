@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/sittitep/devsart#readme",
   "dependencies": {
+    "firebase": "^7.15.0",
     "postcss-preset-env": "^6.7.0",
     "turbolinks": "^5.2.0"
   },
