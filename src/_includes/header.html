@@ -1,8 +1,11 @@
 <header class="text-gray-700 body-font bg-white border-b sticky top-0">
-  <div class="container mx-auto p-4">
-    <a class="flex title-font items-center text-gray-900" href="/">
+  <div class="container mx-auto p-4 flex">
+    <a class="inline-flex title-font items-center text-gray-900" href="/">
       <img src="/assets/images/logo.svg" alt="DEVSART" class="w-10 h-10">
       <span class="ml-3">{{ site.name }}</span>
     </a>
+    <button data-controller="authentication-button" class="ml-auto inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base">
+      <span data-target="authentication-button.text">...</span>
+    </button>
   </div>
 </header>
