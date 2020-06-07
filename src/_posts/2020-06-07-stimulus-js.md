@@ -103,9 +103,11 @@ export default class extends Controller {
 
 ตัวอย่างด้านบนอาจจะไม่เป็นตัวอย่างที่ดีเท่าไหร่ แต่ผมอยากให้เห็นการใช้งานในสถานการณ์จริง
 
+สามารถไปดูตัวอย่างเต็มๆที่ [https://github.com/sittitep/devsart](https://github.com/sittitep/devsart) ก็ได้นะครับ
+
 ถ้าใครสนใจตัวอย่างเพิ่มเติม Stimulus เขียน [document](https://stimulusjs.org/handbook/hello-stimulus) ไว้ค่อนข้างดีเลยครับ
 
 ## สรุป
 โดยส่วนตัวผมค่อนข้างชอบ Stimulus เป็นพิเศษ เพราะ แนวคิดที่ไม่พยามที่จะเข้าควบคุม หรือ กำหนดกฎเกณฑ์จนเกินไป
 
-ยังไงถ้าคุณกำลังมอง javascript library เล็กๆ ที่ไม่บังคับให้คุณเขียน HTML แปลกๆ ก็ลองพิจารณา Stimulus ดูนะครับ
+ยังไงถ้าคุณกำลังมองหา javascript library เล็กๆ ที่ไม่บังคับให้คุณเขียน HTML แปลกๆ ก็ลองพิจารณา Stimulus ดูนะครับ
