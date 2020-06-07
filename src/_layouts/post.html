@@ -34,9 +34,6 @@ layout: default
                   <source src="{{page.commentary.path | relative_url}}" type="{{page.commentary.type}}">
                 </audio>
               </div>
-              <a href="{{ page.next.url }}">
-                <img src="{{ page.next.image | relative_url | proxy_image_url: 450, 300, 'fit' }}" class="w-full">
-              </a>
             </div>
           {% endif %}
           {% if page.next %}
