@@ -1,5 +1,5 @@
 import Turbolinks from "turbolinks";
-import "../javascripts/firebase"
+import "../javascripts/application"
 
 import "../stylesheets/main.css"
 
