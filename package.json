@@ -18,8 +18,12 @@
   },
   "homepage": "https://github.com/sittitep/devsart#readme",
   "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "babel-loader": "^8.1.0",
     "firebase": "^7.15.0",
+    "localforage": "^1.7.4",
     "postcss-preset-env": "^6.7.0",
+    "stimulus": "^1.1.1",
     "turbolinks": "^5.2.0"
   },
   "devDependencies": {

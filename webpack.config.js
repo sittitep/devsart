@@ -18,7 +18,18 @@ module.exports = {
       {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
         loader: 'file-loader?name=/fonts/[name].[ext]' 
-      }
+      },
+      {
+        test: /\.js/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            plugins: [
+              '@babel/plugin-proposal-class-properties'
+            ]
+          }
+        }
+      },
     ],
   },
   // Path to your entry point. From this file Webpack will begin his work
