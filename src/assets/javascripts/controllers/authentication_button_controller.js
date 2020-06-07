@@ -15,8 +15,9 @@ export default class extends Controller {
         let result = await firebase.auth().getRedirectResult()
 
         if (result.user) {
+          let user = result.user
           currentUser = await ApplicationHelper.setCurrentUser(
-            {name: result.user.displayName, email: result.user.email, avatar: result.user.photoURL}
+            {uid: user.uid, name: user.displayName, email: user.email, avatar: user.photoURL}
           )
 
           let event = new CustomEvent("userSignedIn", {detail: currentUser})
