@@ -6,6 +6,9 @@ date: '2020-06-07 21:37:14'
 categories:
 - javascript
 image: assets/images/post/stimulus-js-thumbnail.jpg
+commentary:
+  path: assets/sounds/commentary/stimulus-js-commentary.m4a
+  type: audio/mp4
 ---
 
 พอเราพูดถึง javascript library หลายๆคนคงนึกถึง React, Vue หรือ Angular น้อยคงนักที่จะรู้จัก Stimulus JS

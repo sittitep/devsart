@@ -26,6 +26,19 @@ layout: default
             {% assign author = site.data.people[page.author] %}
             {% include author.html style='large' %}
           </div>
+          {% if page.commentary %}
+            <div class="mt-4">
+              <p class="mb-2 title-font text-lg font-medium text-gray-900">Commentary</p>
+              <div class="flex p-4 bg-white border">
+                <audio controls class="w-full" preload="none">
+                  <source src="{{page.commentary.path | relative_url}}" type="{{page.commentary.type}}">
+                </audio>
+              </div>
+              <a href="{{ page.next.url }}">
+                <img src="{{ page.next.image | relative_url | proxy_image_url: 450, 300, 'fit' }}" class="w-full">
+              </a>
+            </div>
+          {% endif %}
           {% if page.next %}
             <div class="mt-4">
               <p class="mb-2 title-font text-lg font-medium text-gray-900">Next Post</p>
