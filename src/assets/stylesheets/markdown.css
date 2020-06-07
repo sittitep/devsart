@@ -74,6 +74,7 @@
 
 .markdown pre {
   @apply bg-gray-100 rounded p-4;
+  white-space: break-spaces;
 }
 
 .markdown pre code {
