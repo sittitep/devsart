@@ -1,28 +1,25 @@
 import { Controller } from "stimulus"
 import firebase from "../firebase"
 import localForage from "localforage"
+import ApplicationHelper from "../helpers/application_helper"
 
 const provider = new firebase.auth.GoogleAuthProvider()
 
 export default class extends Controller {
-  static targets = ["button", "text"]
+  static targets = ["text"]
 
   connect() {
-    let currentUser
-
     (async () => {
-      currentUser = await localForage.getItem('user')
+      let currentUser = await ApplicationHelper.getCurrentUser()
 
       if (!currentUser) {
-        await firebase.auth().getRedirectResult().then(function(result) {
-          if (result.credential) {
-            localForage.setItem('token', result.credential.accessToken)
-          }
-          if (result.user) {
-            currentUser = {name: result.user.displayName, email: result.user.email}
-            localForage.setItem('user', currentUser)
-          }
-        })
+        let result = await firebase.auth().getRedirectResult()
+
+        if (result.user) {
+          currentUser = await ApplicationHelper.setCurrentUser(
+            {name: result.user.displayName, email: result.user.email}
+          )
+        }
       }
 
       if (currentUser) {
@@ -55,7 +52,7 @@ export default class extends Controller {
   signOut() {
     (async () => {
       await firebase.auth().signOut()
-      await localForage.removeItem('user')
+      await ApplicationHelper.removeCurrentUser()
         
       this.setToSignIn()
     })()
