@@ -4,7 +4,12 @@
       <img src="/assets/images/logo.svg" alt="DEVSART" class="w-10 h-10">
       <span class="ml-3">{{ site.name }}</span>
     </a>
-    <button data-controller="authentication-button" class="ml-auto inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base">
+    <div class="ml-auto inline-flex items-center mr-4" data-controller="user-profile" data-action="userSignedIn@window->user-profile#setUserProfile userSignedOut@window->user-profile#unsetUserProfile">
+      <div data-target="user-profile.wrapper" class="hidden">
+        <img class="w-10 h-10 rounded-full" data-target="user-profile.avatar">
+      </div>
+    </div>
+    <button data-controller="authentication-button" class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base">
       <span data-target="authentication-button.text">...</span>
     </button>
   </div>

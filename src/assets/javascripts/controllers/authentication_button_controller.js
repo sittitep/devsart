@@ -1,6 +1,5 @@
 import { Controller } from "stimulus"
 import firebase from "../firebase"
-import localForage from "localforage"
 import ApplicationHelper from "../helpers/application_helper"
 
 const provider = new firebase.auth.GoogleAuthProvider()
@@ -17,8 +16,11 @@ export default class extends Controller {
 
         if (result.user) {
           currentUser = await ApplicationHelper.setCurrentUser(
-            {name: result.user.displayName, email: result.user.email}
+            {name: result.user.displayName, email: result.user.email, avatar: result.user.photoURL}
           )
+
+          let event = new CustomEvent("userSignedIn", {detail: currentUser})
+          window.dispatchEvent(event)
         }
       }
 
@@ -55,6 +57,9 @@ export default class extends Controller {
       await ApplicationHelper.removeCurrentUser()
         
       this.setToSignIn()
+
+      let event = new CustomEvent("userSignedOut")
+      window.dispatchEvent(event)
     })()
   }
 }
