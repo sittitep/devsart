@@ -19,10 +19,17 @@ export default class extends Controller {
           this._takeHeart()
         }
       }
+
+      let ref = await firebase.database().ref(window.location.pathname)
+      let snap = await ref.once('value')
+      let value = Object.assign({}, snap.val())
+
+      this.heartCountTarget.textContent = value["heartCount"] || 0
     })()
-  }
+  } 
 
   toggleHeart() {
+    let count
     (async() => {
       let currentUser = await ApplicationHelper.getCurrentUser()
       if (currentUser) {
@@ -34,13 +41,21 @@ export default class extends Controller {
           this._giveHeart()
           this.heartCountTarget.textContent = parseInt(this.heartCountTarget.textContent) + 1
           value["heart"] = true
+          count = 1
         } else {
           this._takeHeart()
           this.heartCountTarget.textContent = parseInt(this.heartCountTarget.textContent) - 1 
           value["heart"] = false
+          count = -1
         }
         
         ref.set(value);
+
+        let postRef = await firebase.database().ref(`${window.location.pathname}`)
+        snap = await postRef.once('value')
+        value = Object.assign({}, snap.val())
+
+        postRef.set({heartCount: (value["heartCount"] || 0) + count})
       }
     })()
   }
