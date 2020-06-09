@@ -41,4 +41,4 @@ git  rebase คือ การเปลี่ยนจุดเริ่มต�
 2. ถ้าต้องการทำให้ feature branch เท่ากับ master  ผมจะเลือกใช้ rebase เพื่อป้องกันไม่ให้ history ของเรายุ่งเหยิง เมื่อ merge feature กลับเข้า master
 
 **References**
-1. [Git Merge vs. Rebase: What’s the Diff?](https://hackernoon.com/git-merge-vs-rebase-whats-the-diff-76413c117333)
+1. [Git Merge vs. Rebase: What’s the Diff?](https://hackernoon.com/git-merge-vs-rebase-whats-the-diff-76413c117333){:target="_blank"}

@@ -112,4 +112,4 @@ Date:   Mon Jun 1 06:39:49 2020 +0700
 โดยปกติแล้วผมจะเลือกวิธีให้เหมาะสมกับสถานการณ์ต่างๆ ในกรณีที่เป็นการแก้คำผิด หรือ การตั้งค่าผิด ผมมักจะใช้วิธีที่สอง เพราะ  message ของ commit เหล่านั้นไม่มีความสำคัญสักเท่าไหร่ แต่ในกรณีที่ผมต้อง squash commit ของ feature branch ก่อน merge เข้า branch อื่น ผมมักจะเลือกวิธีที่หนึ่ง เพราะ message ของแต่ละ commit จะถูกเก็บไว้อย่างครบถ้วน
 
 **References**
-1. [rebase - Squash my last X commits together using Git - Stack Overflow](https://stackoverflow.com/questions/5189560/squash-my-last-x-commits-together-using-git)
+1. [rebase - Squash my last X commits together using Git - Stack Overflow](https://stackoverflow.com/questions/5189560/squash-my-last-x-commits-together-using-git){:target="_blank"}

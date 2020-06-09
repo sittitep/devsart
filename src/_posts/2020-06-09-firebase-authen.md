@@ -16,7 +16,7 @@ commentary:
 
 ใน brief นี้ผมจะพูดมาถึงสิ่งที่ผมชอบ หลังจากได้ทดลองใช้ Firebase Authentication กันครับ
 
- > tl;dr Most apps need to know the identity of a user. Knowing a user's identity allows an app to securely save user data in the cloud and provide the same personalized experience across all of the user's devices. [อ่านต่อ](https://firebase.google.com/docs/auth)
+ > tl;dr Most apps need to know the identity of a user. Knowing a user's identity allows an app to securely save user data in the cloud and provide the same personalized experience across all of the user's devices. [อ่านต่อ](https://firebase.google.com/docs/auth){:target="_blank"}
  > 
 
 ## สิ่งที่ผมชอบ
@@ -48,7 +48,7 @@ firebase.auth().signInWithRedirect(provider);
 firebase.auth().getRedirectResult()
 ```
 
-ดูเพิ่มได้  [ที่นี่](https://github.com/sittitep/devsart/blob/master/src/assets/javascripts/controllers/authentication_button_controller.js)
+ดูเพิ่มได้  [ที่นี่](https://github.com/sittitep/devsart/blob/master/src/assets/javascripts/controllers/authentication_button_controller.js){:target="_blank"}
 
 ## สิ่งที่ผมไม่ชอบ
 ### ช้า

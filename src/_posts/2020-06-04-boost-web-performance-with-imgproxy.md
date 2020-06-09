@@ -14,7 +14,7 @@ image: assets/images/post/boost-web-performance-with-imgproxy-thumbnail.jpg
 
 แต่จะให้มานั้ง optimize ทีละรูปมันก็คงจะไม่ค่อยเข้าท่าเท่าไหร่ วันนี้ผมเลยจะมาชวน optmize รูปภาพด้วย imgproxy
 
->tl;dr imgproxy is a fast and secure standalone server for resizing and converting remote images. The main principles of imgproxy are simplicity, speed, and security. [อ่านต่อ](https://github.com/imgproxy/imgproxy)
+>tl;dr imgproxy is a fast and secure standalone server for resizing and converting remote images. The main principles of imgproxy are simplicity, speed, and security. [อ่านต่อ](https://github.com/imgproxy/imgproxy){:target="_blank"}
 >
 
 imgproxy   มาพร้อมกับ docker image ทำให้การใช้งานสะดวกยิ่งขึ้นไปอีก เรามาเริ่มที่ขั้นตอนแรกกันเลย
@@ -53,4 +53,4 @@ localhost:8080/imgproxy/fill/100/100/sm/0/plain/https://swiftlet.co.th/wp-conten
 ![resized-ruby-on-rails](https://devsart.net/imgproxy/fill/100/100/sm/0/plain/https://swiftlet.co.th/wp-content/uploads/2019/05/What-is-Ruby-on-Rails-1-1.png@jpg)
 
 ## ส่งท้าย
-นี่เป็นเพียงตัวอย่างเล็กๆ ที่ผมลองทำให้ดู ถ้าเพื่อนๆสนใจ สามารถเข้าไปดูวิธีการใช้งานเต็มๆได้   [ที่นี่](https://docs.imgproxy.net/#/GETTING_STARTED)
+นี่เป็นเพียงตัวอย่างเล็กๆ ที่ผมลองทำให้ดู ถ้าเพื่อนๆสนใจ สามารถเข้าไปดูวิธีการใช้งานเต็มๆได้   [ที่นี่](https://docs.imgproxy.net/#/GETTING_STARTED){:target="_blank"}

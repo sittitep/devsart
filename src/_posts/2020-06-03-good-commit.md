@@ -53,7 +53,7 @@ Date:   Wed Jun 3 23:17:59 2020 +0700
 
 อย่างตัวอย่างด้านบน เราจะเห็นว่ามีการเรียงลำดับการทำงานที่ชัดเจน ทำให้ผู้อ่านสามารถเข้าใจกระบวนการคิดและเขียน code ได้ โดยเฉพาะถ้าเราต้องการผลักดันแนวคิด TDD วิธีนี้ก็เป็นวิธีที่ได้ผลดีเช่นกัน
 
-> tl;dr TDD สามารถอธิบายได้ว่า เป็นการฝึกโปรแกรมเพื่อให้นักพัฒนาทราบถึงว่าโค้ดใหม่ที่เขียนขึ้นมาเมื่อได้รับการทดสอบแล้วมันผิดพลาดไหม  แถมยังหลีกเลี่ยงโค้ดที่ซ้ำกันได้อีกด้วย โดย TDD ย่อมาจาก Test Driven Development เป้าหมายหลักของ TDD คือการทำให้โค้ดสะอาด เรียบง่าย  และปราศจากบัค [อ่านต่อ](https://www.thaiprogrammer.org/2019/01/what-is-tdd/#:~:text=%E0%B8%AD%E0%B8%B0%E0%B9%84%E0%B8%A3%E0%B8%84%E0%B8%B7%E0%B8%AD%20Test%20Driven%20Development%20(TDD)%3F,%E0%B8%87%E0%B9%88%E0%B8%B2%E0%B8%A2%20%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%A8%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%9A%E0%B8%B1%E0%B8%84)
+> tl;dr TDD สามารถอธิบายได้ว่า เป็นการฝึกโปรแกรมเพื่อให้นักพัฒนาทราบถึงว่าโค้ดใหม่ที่เขียนขึ้นมาเมื่อได้รับการทดสอบแล้วมันผิดพลาดไหม  แถมยังหลีกเลี่ยงโค้ดที่ซ้ำกันได้อีกด้วย โดย TDD ย่อมาจาก Test Driven Development เป้าหมายหลักของ TDD คือการทำให้โค้ดสะอาด เรียบง่าย  และปราศจากบัค [อ่านต่อ](https://www.thaiprogrammer.org/2019/01/what-is-tdd/#:~:text=%E0%B8%AD%E0%B8%B0%E0%B9%84%E0%B8%A3%E0%B8%84%E0%B8%B7%E0%B8%AD%20Test%20Driven%20Development%20(TDD)%3F,%E0%B8%87%E0%B9%88%E0%B8%B2%E0%B8%A2%20%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%A8%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%9A%E0%B8%B1%E0%B8%84){:target="_blank"}
 
 ## 2 ขนาดมีความาสำคัญ (Size does matter)
 การที่เราซอย commit ถี่ๆ ทำให้ commit มีขนาดเล็ก เมื่อทำการ review ผู้อ่านก็จะสามารถ focus ได้มากขึ้น เช่น เมื่อเรา review commit `Add get messages api` ผู้อ่านจะ focus แค่เรื่องของ backend เป็นต้น
@@ -66,4 +66,4 @@ Date:   Wed Jun 3 23:17:59 2020 +0700
 แต่เมื่อไหร่ก็ตามที่เราต้องทำงานเป็นทีม การ commit ที่ดีย่อมส่งผลให้ทีมทำงานง่าย และ มีประสิทธิภาพมากขึ้นอย่างแน่นอน
 
 **Reference**
-1. [อะไรคือ Test Driven Development (TDD)? ตัวอย่าง](https://www.thaiprogrammer.org/2019/01/what-is-tdd/#:~:text=%E0%B8%AD%E0%B8%B0%E0%B9%84%E0%B8%A3%E0%B8%84%E0%B8%B7%E0%B8%AD%20Test%20Driven%20Development%20(TDD)%3F,%E0%B8%87%E0%B9%88%E0%B8%B2%E0%B8%A2%20%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%A8%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%9A%E0%B8%B1%E0%B8%84)
+1. [อะไรคือ Test Driven Development (TDD)? ตัวอย่าง](https://www.thaiprogrammer.org/2019/01/what-is-tdd/#:~:text=%E0%B8%AD%E0%B8%B0%E0%B9%84%E0%B8%A3%E0%B8%84%E0%B8%B7%E0%B8%AD%20Test%20Driven%20Development%20(TDD)%3F,%E0%B8%87%E0%B9%88%E0%B8%B2%E0%B8%A2%20%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%A8%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%9A%E0%B8%B1%E0%B8%84){:target="_blank"}

@@ -15,7 +15,7 @@ commentary:
 
  Stimulus ถูกสร้างขึ้นมาด้วยแนวคิดที่อยากรักษาความเรียบง่ายของ HTML ไว้ ลดความซับซ้อนของ Javascript  หน้าบ้าน
  
-  >tl;dr Stimulus is a JavaScript framework with modest ambitions. It doesn’t seek to take over your entire front-end—in fact, it’s not concerned with rendering HTML at all. Instead, it’s designed to augment your HTML with just enough behavior to make it shine. [อ่านต่อ](https://stimulusjs.org/)
+  >tl;dr Stimulus is a JavaScript framework with modest ambitions. It doesn’t seek to take over your entire front-end—in fact, it’s not concerned with rendering HTML at all. Instead, it’s designed to augment your HTML with just enough behavior to make it shine. [อ่านต่อ](https://stimulusjs.org/){:target="_blank"}
  
 วันนี้ผมจะมาแชร์การใช้งาน Stimulus ใน DEVSART ให้ดูกันครับ
 
@@ -106,9 +106,9 @@ export default class extends Controller {
 
 ตัวอย่างด้านบนอาจจะไม่เป็นตัวอย่างที่ดีเท่าไหร่ แต่ผมอยากให้เห็นการใช้งานในสถานการณ์จริง
 
-สามารถไปดูตัวอย่างเต็มๆที่ [https://github.com/sittitep/devsart](https://github.com/sittitep/devsart) ก็ได้นะครับ
+สามารถไปดูตัวอย่างเต็มๆที่ [https://github.com/sittitep/devsart](https://github.com/sittitep/devsart){:target="_blank"} ก็ได้นะครับ
 
-ถ้าใครสนใจตัวอย่างเพิ่มเติม Stimulus เขียน [document](https://stimulusjs.org/handbook/hello-stimulus) ไว้ค่อนข้างดีเลยครับ
+ถ้าใครสนใจตัวอย่างเพิ่มเติม Stimulus เขียน [document](https://stimulusjs.org/handbook/hello-stimulus){:target="_blank"} ไว้ค่อนข้างดีเลยครับ
 
 ## สรุป
 โดยส่วนตัวผมค่อนข้างชอบ Stimulus เป็นพิเศษ เพราะ แนวคิดที่ไม่พยามที่จะเข้าควบคุม หรือ กำหนดกฎเกณฑ์จนเกินไป
