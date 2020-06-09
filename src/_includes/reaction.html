@@ -1,0 +1,10 @@
+<div data-controller="post-reaction">
+  <div class="flex lg:flex-col">
+    <div class="flex items-center justify-center flex-col">
+        <button class="border rounded-full h-12 w-12 justify-center items-center bg-white text-red-600 borderfocus:outline-none hover:bg-gray-300 rounded text-base" data-target="post-reaction.heartButton" data-toggle="false" data-action="click->post-reaction#toggleHeart">
+          ❤
+        </button>
+        <div data-target="post-reaction.heartCount">0</div>
+    </div>
+  </div>
+</div>
