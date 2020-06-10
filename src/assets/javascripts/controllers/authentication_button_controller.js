@@ -20,6 +20,9 @@ export default class extends Controller {
             {uid: user.uid, name: user.displayName, email: user.email, avatar: user.photoURL}
           )
 
+          let ref = await firebase.database().ref(`users/${currentUser.uid}`)
+          ref.update({name: user.displayName, email: user.email, avatar: user.photoURL})
+
           let event = new CustomEvent("userSignedIn", {detail: currentUser})
           window.dispatchEvent(event)
         }

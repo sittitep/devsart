@@ -9,7 +9,7 @@ layout: default
           {% include reaction.html %}
         </div>
         <div class="lg:w-7/12 lg:pr-4">
-          <div class="text-left p-4 bg-white border sm:text-xl">
+          <div class="text-left p-4 bg-white border sm:text-xl mb-4">
             <div class="flex-col flex">
               <div class="flex">
                 {% for category in page.categories %}
@@ -21,6 +21,15 @@ layout: default
             <h2 class="text-4xl text-gray-900 py-4 font-normal">{{ page.title }}</h2>
             <div class="markdown">
               {{ content }}
+            </div>
+          </div>
+          <div>
+            <p class="mb-2 title-font text-lg font-medium text-gray-900">Comment</p>
+            <div class="p-4 bg-white sm:text-xl">
+              <div class="flex md:flex-no-wrap flex-wrap justify-center md:justify-start" data-controller="comment-form">
+                <input class="w-full rounded mr-4 py-2 px-4 border text-base focus:border-super-blue font-thin" placeholder="This post is awesome ..." type="text" data-target="comment-form.message">
+                <button class="text-base text-white bg-super-blue border-0 py-2 px-6 rounded hover:bg-gray-600" data-action="click->comment-form#send">Send</button>
+              </div>
             </div>
           </div>
         </div>
