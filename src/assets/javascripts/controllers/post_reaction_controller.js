@@ -56,6 +56,9 @@ export default class extends Controller {
         value = Object.assign({}, snap.val())
 
         postRef.set({heartCount: (value["heartCount"] || 0) + count})
+      } else {
+        let event = new CustomEvent("unauthorized")
+        window.dispatchEvent(event)
       }
     })()
   }

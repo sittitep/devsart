@@ -36,7 +36,7 @@ export default class extends Controller {
 
   setToSignIn() {
     this.textTarget.textContent = "Sign in with Google"
-    this.element.dataset["action"] = "click->authentication-button#signIn"
+    this.element.dataset["action"] = "click->authentication-button#signIn unauthorized@window->authentication-button#signIn"
   }
 
   setToSignOut() {
