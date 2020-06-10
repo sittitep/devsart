@@ -9,9 +9,11 @@ export default class extends Controller {
     let currentUser = await ApplicationHelper.getCurrentUser()
     if (currentUser) {
       let ref = await firebase.database().ref(`${window.location.pathname}/messages`)
-      let message = this.messageTarget.value
+      let text = this.messageTarget.value
 
-      ref.push({uid: currentUser.uid, message: message})
+      ref.push({uid: currentUser.uid, text: text})
+
+      this.messageTarget.value = ""
     } else {
       let event = new CustomEvent("unauthorized")
       window.dispatchEvent(event)
