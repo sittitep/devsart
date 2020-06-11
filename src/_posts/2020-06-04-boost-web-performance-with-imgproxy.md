@@ -8,6 +8,9 @@ categories:
 date: '2020-06-04 20:57:44'
 layout: post
 image: assets/images/post/boost-web-performance-with-imgproxy-thumbnail.jpg
+commentary:
+  path: assets/sounds/commentary/boost-web-performance-with-imgproxy-commentary.m4a
+  New field 4: audio/mp4
 ---
 
 รูปภาพถือ เป็นส่วนสำคัญของเว็บไซต์ แต่รูปภาพเองก็ทำให้ performance ของเรานั้นตกต่ำหากเราไม่ได้ทำการ optimize รูปภาพเหล่านั้น
@@ -33,6 +36,13 @@ services:
 ```
 
 เท่านี้  imgproxy ก็พร้อมใช้งานแล้วครับ
+
+ส่วนถ้าใครไม่สะดวก  docker-compose จะเรียกใช้ตรงๆเลยก็ได้ครับ
+
+```
+docker pull darthsim/imgproxy:latest
+docker run -p 8080:8080 -it darthsim/imgproxy
+```
 
 ##  ตัวอย่างการใช้งาน
 
