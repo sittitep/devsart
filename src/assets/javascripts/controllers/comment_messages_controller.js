@@ -5,49 +5,36 @@ import ApplicationHelper from "../helpers/application_helper"
 export default class extends Controller {
   static targets = ["message"]
 
-  // async send() {
-  //   let currentUser = await ApplicationHelper.getCurrentUser()
-  //   if (currentUser) {
-  //     let ref = await firebase.database().ref(`${window.location.pathname}/messages`)
-  //     let message = this.messageTarget.value
-
-  //     ref.push({uid: currentUser.uid, message: message})
-  //   } else {
-  //     let event = new CustomEvent("unauthorized")
-  //     window.dispatchEvent(event)
-  //   }
-  // }
   async connect() {
     let ref = await firebase.database().ref(`${window.location.pathname}/messages`)
-    let snap = await ref.once("value")
-    let messages = snap.val()
+    
+    ref.orderByChild("timestamp").on('child_added', async snap => {
+      let message = await snap.val()
+      let dom = await this._buildMessage(snap.key, message.uid, message.text)
 
-    Object.keys(messages).forEach(key => {
-      (async () => {
-        let message = messages[key]
-        let dom = await this._buildMessage(message.uid, message.text)
-        
-        this.element.append(dom)
-      })()
+      this.element.append(dom)
     })
   }
 
-  async _buildMessage(uid, text){
+  async _buildMessage(key, uid, text){
     let ref = await firebase.database().ref(`users/${uid}`)
     let snap = await ref.once("value")
     let user = snap.val()
 
-    let template = document.querySelector('#comment-message');
+    let template = document.querySelector('#comment-message')
 
-    let clone = template.content.cloneNode(true);
+    let clone = template.content.cloneNode(true)
+    let div = clone.querySelector("div")
 
-    let img = clone.querySelector("img");
+    div.id = key
+
+    let img = clone.querySelector("img")
     img.src = user.avatar
 
-    let span = clone.querySelectorAll("span");
-    span[0].textContent = user.name;
-    span[1].textContent = text;
+    let span = clone.querySelectorAll("span")
+    span[0].textContent = user.name
+    span[1].textContent = text
 
-    return clone;
+    return clone
   }
 }

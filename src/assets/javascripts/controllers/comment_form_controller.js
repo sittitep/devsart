@@ -11,7 +11,7 @@ export default class extends Controller {
       let ref = await firebase.database().ref(`${window.location.pathname}/messages`)
       let text = this.messageTarget.value
 
-      ref.push({uid: currentUser.uid, text: text})
+      ref.push({uid: currentUser.uid, text: text, timestamp: Date.now()})
 
       this.messageTarget.value = ""
     } else {
